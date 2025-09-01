@@ -1,0 +1,217 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #222;
+  overflow-x: hidden;
+}
+
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  padding: 15px 40px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  z-index: 10;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+  margin-left: 25px;
+  font-size: 16px;
+}
+
+nav a:hover {
+  color: gray;
+}
+
+
+.burg {
+  position: relative;
+  margin-top: 60px;
+}
+
+.burg img {
+  width: 100%;
+  height: 90vh;
+  object-fit: cover;
+}
+
+.burg h1 {
+  position: absolute;
+  bottom: 40px;
+  left: 40px;
+  font-size: 3rem;
+  color: rgba(50,50,50,0.7);
+  letter-spacing: 4px;
+}
+
+
+.sec2 {
+  padding: 80px 10%;
+}
+
+.i1 {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+.img1 img {
+  width: 100%;
+  max-width: 450px;
+  border-radius: 10px;
+}
+
+.matter {
+  flex: 1;
+}
+
+.matter h2 {
+  letter-spacing: 3px;
+  margin-bottom: 15px;
+}
+
+.matter .trad {
+  font-style: italic;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+
+.highlight {
+  background: rgba(200,200,200,0.3);
+}
+
+.gray {
+  color: gray;
+  margin-top: 15px;
+}
+
+
+hr {
+  width: 70%;
+  margin: 60px auto;
+  border: none;
+  border-top: 1px solid rgba(150,150,150,0.3);
+}
+
+
+.sec3 {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 50px 10%;
+  gap: 50px;
+}
+
+.m2 {
+  flex: 1;
+}
+
+.m2 h1 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.m2 h3 {
+  margin-top: 20px;
+  letter-spacing: 1px;
+}
+
+.m2 p {
+  color: gray;
+  margin-bottom: 10px;
+}
+
+.img2 img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
+}
+
+
+.m3 {
+  padding: 80px 10%;
+}
+
+.m3 h1 {
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+}
+
+.m3 .address {
+  color: steelblue;
+  margin: 20px 0;
+}
+
+form {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+form input, form textarea {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: none;
+  border-bottom: 1px solid #aaa;
+  font-size: 16px;
+}
+
+form textarea {
+  min-height: 80px;
+  resize: vertical;
+}
+
+button {
+  padding: 12px;
+  border: none;
+  background: #ddd;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: gray;
+  color: white;
+}
+
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #f2f2f2;
+  margin-top: 50px;
+}
+
+#w3 {
+  text-decoration: underline;
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+@media(max-width: 768px) {
+  .i1, .sec3 {
+    flex-direction: column;
+    text-align: center;
+  }
+  .burg h1 {
+    font-size: 2rem;
+  }
+}
